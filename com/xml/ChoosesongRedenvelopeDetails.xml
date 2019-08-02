@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ChoosesongRedenvelopeDetailsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.ChoosesongRedenvelopeDetails">
+        <id column="id" property="id" />
+        <result column="userId" property="userId" />
+        <result column="pascreenId" property="pascreenId" />
+        <result column="choosesongRedenvelopeId" property="choosesongRedenvelopeId" />
+        <result column="state" property="state" />
+        <result column="popupState" property="popupState" />
+        <result column="creationTime" property="creationTime" />
+        <result column="type" property="type" />
+        <result column="barId" property="barId" />
+        <result column="ifopen" property="ifopen" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userId, pascreenId, choosesongRedenvelopeId, state, popupState, creationTime, type, barId, ifopen
+    </sql>
+
+</mapper>

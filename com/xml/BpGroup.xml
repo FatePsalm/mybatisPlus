@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.BpGroupMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.BpGroup">
+        <id column="id" property="id" />
+        <result column="groupName" property="groupName" />
+        <result column="theme_nums" property="themeNums" />
+        <result column="video_url" property="videoUrl" />
+        <result column="video_image" property="videoImage" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, groupName, theme_nums, video_url, video_image
+    </sql>
+
+</mapper>

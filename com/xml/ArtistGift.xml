@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ArtistGiftMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.ArtistGift">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="gift_name" property="giftName" />
+        <result column="icon" property="icon" />
+        <result column="num" property="num" />
+        <result column="creation_time" property="creationTime" />
+        <result column="note" property="note" />
+        <result column="send_userid" property="sendUserid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, gift_name, icon, num, creation_time, note, send_userid
+    </sql>
+
+</mapper>

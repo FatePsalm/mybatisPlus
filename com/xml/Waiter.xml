@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.WaiterMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Waiter">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="time" property="time" />
+        <result column="remarks" property="remarks" />
+        <result column="barbaseid" property="barbaseid" />
+        <result column="del" property="del" />
+        <result column="isreceive" property="receive" />
+        <result column="freetimes" property="freetimes" />
+        <result column="dsfreetimes" property="dsfreetimes" />
+        <result column="limittimes" property="limittimes" />
+        <result column="songfreetimes" property="songfreetimes" />
+        <result column="isdelblack" property="delblack" />
+        <result column="isRepeatPascreen" property="repeatPascreen" />
+        <result column="free_song" property="freeSong" />
+        <result column="maxBpTime" property="maxBpTime" />
+        <result column="type" property="type" />
+        <result column="ratio" property="ratio" />
+        <result column="newratio" property="newratio" />
+        <result column="phone" property="phone" />
+        <result column="realname" property="realname" />
+        <result column="role" property="role" />
+        <result column="allusedtime" property="allusedtime" />
+        <result column="is_showpk" property="showpk" />
+        <result column="open_bprich" property="openBprich" />
+        <result column="isDivede" property="divede" />
+        <result column="divedePrent" property="divedePrent" />
+        <result column="agreeDeal" property="agreeDeal" />
+        <result column="free_drive" property="freeDrive" />
+        <result column="drivefreetimes" property="drivefreetimes" />
+        <result column="limitdrivetimes" property="limitdrivetimes" />
+        <result column="freeDanceTimes" property="freeDanceTimes" />
+        <result column="freeDance" property="freeDance" />
+        <result column="songMaxFreeTimes" property="songMaxFreeTimes" />
+        <result column="songTempStartTime" property="songTempStartTime" />
+        <result column="songTempEndTime" property="songTempEndTime" />
+        <result column="divide_expire_time" property="divideExpireTime" />
+        <result column="divide_days" property="divideDays" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, time, remarks, barbaseid, del, isreceive, freetimes, dsfreetimes, limittimes, songfreetimes, isdelblack, isRepeatPascreen, free_song, maxBpTime, type, ratio, newratio, phone, realname, role, allusedtime, is_showpk, open_bprich, isDivede, divedePrent, agreeDeal, free_drive, drivefreetimes, limitdrivetimes, freeDanceTimes, freeDance, songMaxFreeTimes, songTempStartTime, songTempEndTime, divide_expire_time, divide_days
+    </sql>
+
+</mapper>

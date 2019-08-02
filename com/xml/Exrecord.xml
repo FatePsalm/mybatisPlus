@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ExrecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Exrecord">
+        <id column="id" property="id" />
+        <result column="time" property="time" />
+        <result column="vipcardid" property="vipcardid" />
+        <result column="commid" property="commid" />
+        <result column="delexrecord" property="delexrecord" />
+        <result column="barid" property="barid" />
+        <result column="operatorid" property="operatorid" />
+        <result column="goodsname" property="goodsname" />
+        <result column="imgurl" property="imgurl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, time, vipcardid, commid, delexrecord, barid, operatorid, goodsname, imgurl
+    </sql>
+
+</mapper>

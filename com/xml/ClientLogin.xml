@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ClientLoginMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.ClientLogin">
+        <id column="id" property="id" />
+        <result column="user_name" property="userName" />
+        <result column="version" property="version" />
+        <result column="remeber_password" property="remeberPassword" />
+        <result column="auto_login" property="autoLogin" />
+        <result column="click_login" property="clickLogin" />
+        <result column="clickTime" property="clickTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_name, version, remeber_password, auto_login, click_login, clickTime
+    </sql>
+
+</mapper>

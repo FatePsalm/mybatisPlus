@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.DanceorderrecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Danceorderrecord">
+        <id column="id" property="id" />
+        <result column="proId" property="proId" />
+        <result column="pascreenId" property="pascreenId" />
+        <result column="barId" property="barId" />
+        <result column="payState" property="payState" />
+        <result column="videoId" property="videoId" />
+        <result column="danceConfigId" property="danceConfigId" />
+        <result column="artId" property="artId" />
+        <result column="artName" property="artName" />
+        <result column="paNum" property="paNum" />
+        <result column="danceTime" property="danceTime" />
+        <result column="price" property="price" />
+        <result column="userId" property="userId" />
+        <result column="userName" property="userName" />
+        <result column="seatNum" property="seatNum" />
+        <result column="payType" property="payType" />
+        <result column="time" property="time" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, proId, pascreenId, barId, payState, videoId, danceConfigId, artId, artName, paNum, danceTime, price, userId, userName, seatNum, payType, time
+    </sql>
+
+</mapper>

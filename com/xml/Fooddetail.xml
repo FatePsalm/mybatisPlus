@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.FooddetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Fooddetail">
+        <id column="id" property="id" />
+        <result column="typeid" property="typeid" />
+        <result column="name" property="name" />
+        <result column="price" property="price" />
+        <result column="imgid" property="imgid" />
+        <result column="remark" property="remark" />
+        <result column="barid" property="barid" />
+        <result column="isdel" property="del" />
+        <result column="time" property="time" />
+        <result column="allin" property="allin" />
+        <result column="partin" property="partin" />
+        <result column="maxordernum" property="maxordernum" />
+        <result column="isInteractfood" property="interactfood" />
+        <result column="imgsrc" property="imgsrc" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, typeid, name, price, imgid, remark, barid, isdel, time, allin, partin, maxordernum, isInteractfood, imgsrc
+    </sql>
+
+</mapper>

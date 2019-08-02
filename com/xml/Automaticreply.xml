@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.AutomaticreplyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Automaticreply">
+        <id column="id" property="id" />
+        <result column="content" property="content" />
+        <result column="type" property="type" />
+        <result column="msgtype" property="msgtype" />
+        <result column="imgurl" property="imgurl" />
+        <result column="time" property="time" />
+        <result column="barid" property="barid" />
+        <result column="objid" property="objid" />
+        <result column="keyword" property="keyword" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, content, type, msgtype, imgurl, time, barid, objid, keyword
+    </sql>
+
+</mapper>

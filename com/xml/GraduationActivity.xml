@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.GraduationActivityMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.GraduationActivity">
+        <id column="id" property="id" />
+        <result column="userId" property="userId" />
+        <result column="type" property="type" />
+        <result column="time" property="time" />
+        <result column="code" property="code" />
+        <result column="barId" property="barId" />
+        <result column="indexSort" property="indexSort" />
+        <result column="activeId" property="activeId" />
+        <result column="realname" property="realname" />
+        <result column="tel" property="tel" />
+        <result column="hasShare" property="hasShare" />
+        <result column="remark" property="remark" />
+        <result column="startdate" property="startdate" />
+        <result column="overdate" property="overdate" />
+        <result column="prizeName" property="prizeName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userId, type, time, code, barId, indexSort, activeId, realname, tel, hasShare, remark, startdate, overdate, prizeName
+    </sql>
+
+</mapper>

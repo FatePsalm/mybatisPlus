@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TUserBehavior201806Mapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.TUserBehavior201806">
+        <id column="id" property="id" />
+        <result column="date" property="date" />
+        <result column="userid" property="userid" />
+        <result column="barid" property="barid" />
+        <result column="type" property="type" />
+        <result column="enter_letter_time" property="enterLetterTime" />
+        <result column="use_letter_time" property="useLetterTime" />
+        <result column="click_gift_time" property="clickGiftTime" />
+        <result column="use_gift_time" property="useGiftTime" />
+        <result column="is_pay" property="pay" />
+        <result column="click_song_time" property="clickSongTime" />
+        <result column="buy_song_time" property="buySongTime" />
+        <result column="click_bp_time" property="clickBpTime" />
+        <result column="buy_bp_time" property="buyBpTime" />
+        <result column="click_ds_time" property="clickDsTime" />
+        <result column="buy_ds_time" property="buyDsTime" />
+        <result column="normal_msg_num" property="normalMsgNum" />
+        <result column="click_egg_time" property="clickEggTime" />
+        <result column="request_time" property="requestTime" />
+        <result column="longitude" property="longitude" />
+        <result column="latitude" property="latitude" />
+        <result column="home_attention" property="homeAttention" />
+        <result column="home_sendgift" property="homeSendgift" />
+        <result column="home_talk" property="homeTalk" />
+        <result column="at_onwall_time" property="atOnwallTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, date, userid, barid, type, enter_letter_time, use_letter_time, click_gift_time, use_gift_time, is_pay, click_song_time, buy_song_time, click_bp_time, buy_bp_time, click_ds_time, buy_ds_time, normal_msg_num, click_egg_time, request_time, longitude, latitude, home_attention, home_sendgift, home_talk, at_onwall_time
+    </sql>
+
+</mapper>

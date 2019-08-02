@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.OperaterecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Operaterecord">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="barid" property="barid" />
+        <result column="newcontent" property="newcontent" />
+        <result column="oldcontent" property="oldcontent" />
+        <result column="time" property="time" />
+        <result column="type" property="type" />
+        <result column="operater" property="operater" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, barid, newcontent, oldcontent, time, type, operater, remark
+    </sql>
+
+</mapper>

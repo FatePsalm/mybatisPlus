@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.BuyLevelRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.BuyLevelRecord">
+        <id column="id" property="id" />
+        <result column="buylevel" property="buylevel" />
+        <result column="singleprice" property="singleprice" />
+        <result column="price" property="price" />
+        <result column="time" property="time" />
+        <result column="userid" property="userid" />
+        <result column="status" property="status" />
+        <result column="payid" property="payid" />
+        <result column="num" property="num" />
+        <result column="timetype" property="timetype" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, buylevel, singleprice, price, time, userid, status, payid, num, timetype
+    </sql>
+
+</mapper>

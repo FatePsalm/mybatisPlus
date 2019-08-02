@@ -23,7 +23,7 @@ public class UserController {
     @RequestMapping("demo")
     public User demo() {
         System.out.println("UserController.demo");
-        return userService.getById(1);
+        return userService.getById("1");
     }
 }
 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.HerosUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.HerosUser">
+        <id column="id" property="id" />
+        <result column="my_name" property="myName" />
+        <result column="sex" property="sex" />
+        <result column="tel" property="tel" />
+        <result column="bust" property="bust" />
+        <result column="waist" property="waist" />
+        <result column="hip" property="hip" />
+        <result column="weight" property="weight" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="district" property="district" />
+        <result column="life_photo" property="lifePhoto" />
+        <result column="artistic_photo" property="artisticPhoto" />
+        <result column="play_video" property="playVideo" />
+        <result column="audit" property="audit" />
+        <result column="creation_time" property="creationTime" />
+        <result column="serial_number" property="serialNumber" />
+        <result column="poll" property="poll" />
+        <result column="free_ticket" property="freeTicket" />
+        <result column="pay_for_ticket" property="payForTicket" />
+        <result column="discount_ticket" property="discountTicket" />
+        <result column="bar_id" property="barId" />
+        <result column="platform" property="platform" />
+        <result column="platform_id" property="platformId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, my_name, sex, tel, bust, waist, hip, weight, province, city, district, life_photo, artistic_photo, play_video, audit, creation_time, serial_number, poll, free_ticket, pay_for_ticket, discount_ticket, bar_id, platform, platform_id
+    </sql>
+
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ApplyDividMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.ApplyDivid">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="groupDivid" property="groupDivid" />
+        <result column="agentDivid" property="agentDivid" />
+        <result column="barbaseDivid" property="barbaseDivid" />
+        <result column="wemewDivid" property="wemewDivid" />
+        <result column="status" property="status" />
+        <result column="time" property="time" />
+        <result column="waiterdatajson" property="waiterdatajson" />
+        <result column="adminid" property="adminid" />
+        <result column="agentId" property="agentId" />
+        <result column="type" property="type" />
+        <result column="isb" property="isb" />
+        <result column="companyId" property="companyId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, groupDivid, agentDivid, barbaseDivid, wemewDivid, status, time, waiterdatajson, adminid, agentId, type, isb, companyId
+    </sql>
+
+</mapper>

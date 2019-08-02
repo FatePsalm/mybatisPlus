@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ArtistMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Artist">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="code" property="code" />
+        <result column="head" property="head" />
+        <result column="tel" property="tel" />
+        <result column="type" property="type" />
+        <result column="registertype" property="registertype" />
+        <result column="intro" property="intro" />
+        <result column="userid" property="userid" />
+        <result column="state" property="state" />
+        <result column="ifuse" property="ifuse" />
+        <result column="money" property="money" />
+        <result column="remark" property="remark" />
+        <result column="time" property="time" />
+        <result column="realname" property="realname" />
+        <result column="codenum" property="codenum" />
+        <result column="newname" property="newname" />
+        <result column="newtype" property="newtype" />
+        <result column="presented" property="presented" />
+        <result column="newhead" property="newhead" />
+        <result column="city" property="city" />
+        <result column="gift_number" property="giftNumber" />
+        <result column="achievement" property="achievement" />
+        <result column="isIdentity" property="isIdentity" />
+        <result column="publicity_num" property="publicityNum" />
+        <result column="artist_lv" property="artistLv" />
+        <result column="artist_integral" property="artistIntegral" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, code, head, tel, type, registertype, intro, userid, state, ifuse, money, remark, time, realname, codenum, newname, newtype, presented, newhead, city, gift_number, achievement, isIdentity, publicity_num, artist_lv, artist_integral
+    </sql>
+
+</mapper>

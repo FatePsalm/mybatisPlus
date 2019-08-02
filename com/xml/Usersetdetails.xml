@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.UsersetdetailsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Usersetdetails">
+        <id column="id" property="id" />
+        <result column="usersetid" property="usersetid" />
+        <result column="seatname" property="seatname" />
+        <result column="seattype" property="seattype" />
+        <result column="time" property="time" />
+        <result column="bartableid" property="bartableid" />
+        <result column="barid" property="barid" />
+        <result column="paystate" property="paystate" />
+        <result column="createtime" property="createtime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, usersetid, seatname, seattype, time, bartableid, barid, paystate, createtime
+    </sql>
+
+</mapper>

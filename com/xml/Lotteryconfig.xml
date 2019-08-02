@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.LotteryconfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Lotteryconfig">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="time" property="time" />
+        <result column="title" property="title" />
+        <result column="pcbg" property="pcbg" />
+        <result column="telbg" property="telbg" />
+        <result column="num" property="num" />
+        <result column="round" property="round" />
+        <result column="firstAwardnum" property="firstAwardnum" />
+        <result column="secondAwardnum" property="secondAwardnum" />
+        <result column="thirdAwardnum" property="thirdAwardnum" />
+        <result column="joinAwardnum" property="joinAwardnum" />
+        <result column="needPos" property="needPos" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, time, title, pcbg, telbg, num, round, firstAwardnum, secondAwardnum, thirdAwardnum, joinAwardnum, needPos
+    </sql>
+
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.SynwechatMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Synwechat">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="nextopenid" property="nextopenid" />
+        <result column="getfens" property="getfens" />
+        <result column="getmaterial" property="getmaterial" />
+        <result column="mass" property="mass" />
+        <result column="isaccess" property="access" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, nextopenid, getfens, getmaterial, mass, isaccess
+    </sql>
+
+</mapper>

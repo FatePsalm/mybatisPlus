@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.StyleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Style">
+        <id column="id" property="id" />
+        <result column="sub" property="sub" />
+        <result column="stylename" property="stylename" />
+        <result column="page" property="page" />
+        <result column="background" property="background" />
+        <result column="jsppage" property="jsppage" />
+        <result column="modelpage" property="modelpage" />
+        <result column="time" property="time" />
+        <result column="servicenomodule" property="servicenomodule" />
+        <result column="homebgtype" property="homebgtype" />
+        <result column="isvipstyle" property="vipstyle" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, sub, stylename, page, background, jsppage, modelpage, time, servicenomodule, homebgtype, isvipstyle
+    </sql>
+
+</mapper>

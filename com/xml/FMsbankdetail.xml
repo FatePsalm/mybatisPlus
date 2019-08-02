@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.FMsbankdetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.FMsbankdetail">
+        <id column="id" property="id" />
+        <result column="svrId" property="svrId" />
+        <result column="acntNo" property="acntNo" />
+        <result column="acntName" property="acntName" />
+        <result column="type" property="type" />
+        <result column="actDate" property="actDate" />
+        <result column="intrDate" property="intrDate" />
+        <result column="chequeNum" property="chequeNum" />
+        <result column="amount" property="amount" />
+        <result column="opAcntNo" property="opAcntNo" />
+        <result column="opAcntName" property="opAcntName" />
+        <result column="opBankName" property="opBankName" />
+        <result column="opBankAddr" property="opBankAddr" />
+        <result column="opAreaCode" property="opAreaCode" />
+        <result column="explain" property="explain" />
+        <result column="balance" property="balance" />
+        <result column="recseq" property="recseq" />
+        <result column="timestamp" property="timestamp" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, svrId, acntNo, acntName, type, actDate, intrDate, chequeNum, amount, opAcntNo, opAcntName, opBankName, opBankAddr, opAreaCode, explain, balance, recseq, timestamp
+    </sql>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TAdminRoleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.TAdminRole">
+        <id column="id" property="id" />
+        <result column="admin_id" property="adminId" />
+        <result column="barlabel" property="barlabel" />
+        <result column="sqlabel" property="sqlabel" />
+        <result column="aglabel" property="aglabel" />
+        <result column="conpanylabel" property="conpanylabel" />
+        <result column="dalabel" property="dalabel" />
+        <result column="fklabel" property="fklabel" />
+        <result column="syslabel" property="syslabel" />
+        <result column="sysclabel" property="sysclabel" />
+        <result column="templabel" property="templabel" />
+        <result column="remark" property="remark" />
+        <result column="monitoring" property="monitoring" />
+        <result column="artistlabel" property="artistlabel" />
+        <result column="binding" property="binding" />
+        <result column="marketlabel" property="marketlabel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, admin_id, barlabel, sqlabel, aglabel, conpanylabel, dalabel, fklabel, syslabel, sysclabel, templabel, remark, monitoring, artistlabel, binding, marketlabel
+    </sql>
+
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ImagesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Images">
+        <id column="id" property="id" />
+        <result column="media_id" property="mediaId" />
+        <result column="url" property="url" />
+        <result column="time" property="time" />
+        <result column="barid" property="barid" />
+        <result column="imgurl" property="imgurl" />
+        <result column="isused" property="used" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, media_id, url, time, barid, imgurl, isused
+    </sql>
+
+</mapper>

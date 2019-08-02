@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.WemewredbagMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Wemewredbag">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="redbag" property="redbag" />
+        <result column="totalRedbag" property="totalRedbag" />
+        <result column="time" property="time" />
+        <result column="cashRed" property="cashRed" />
+        <result column="operatorCash" property="operatorCash" />
+        <result column="cashTotalRed" property="cashTotalRed" />
+        <result column="version" property="version" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, redbag, totalRedbag, time, cashRed, operatorCash, cashTotalRed, version
+    </sql>
+
+</mapper>

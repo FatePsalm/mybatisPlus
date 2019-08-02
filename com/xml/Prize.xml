@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.PrizeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Prize">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="lev" property="lev" />
+        <result column="total" property="total" />
+        <result column="time" property="time" />
+        <result column="barid" property="barid" />
+        <result column="type" property="type" />
+        <result column="begin" property="begin" />
+        <result column="end" property="end" />
+        <result column="imgurl" property="imgurl" />
+        <result column="surplusnum" property="surplusnum" />
+        <result column="overtime" property="overtime" />
+        <result column="description" property="description" />
+        <result column="probability" property="probability" />
+        <result column="effectivetime" property="effectivetime" />
+        <result column="starttime" property="starttime" />
+        <result column="startDate" property="startDate" />
+        <result column="endDate" property="endDate" />
+        <result column="userange" property="userange" />
+        <result column="pricelimit" property="pricelimit" />
+        <result column="prizename" property="prizename" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, lev, total, time, barid, type, begin, end, imgurl, surplusnum, overtime, description, probability, effectivetime, starttime, startDate, endDate, userange, pricelimit, prizename
+    </sql>
+
+</mapper>

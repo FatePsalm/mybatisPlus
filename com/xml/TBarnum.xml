@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TBarnumMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.TBarnum">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="qrcode" property="qrcode" />
+        <result column="benqr" property="benqr" />
+        <result column="gameQrcode" property="gameQrcode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, qrcode, benqr, gameQrcode
+    </sql>
+
+</mapper>

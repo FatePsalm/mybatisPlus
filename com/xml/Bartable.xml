@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.BartableMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Bartable">
+        <id column="id" property="id" />
+        <result column="tablename" property="tablename" />
+        <result column="imgurl" property="imgurl" />
+        <result column="time" property="time" />
+        <result column="barid" property="barid" />
+        <result column="tableid" property="tableid" />
+        <result column="isdel" property="del" />
+        <result column="operatid" property="operatid" />
+        <result column="seattypeid" property="seattypeid" />
+        <result column="version" property="version" />
+        <result column="updatetime" property="updatetime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, tablename, imgurl, time, barid, tableid, isdel, operatid, seattypeid, version, updatetime
+    </sql>
+
+</mapper>

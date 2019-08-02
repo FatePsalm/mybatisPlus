@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Config">
+        <id column="id" property="id" />
+        <result column="appid" property="appid" />
+        <result column="appscrity" property="appscrity" />
+        <result column="url" property="url" />
+        <result column="barid" property="barid" />
+        <result column="accesstoken" property="accesstoken" />
+        <result column="microsignal" property="microsignal" />
+        <result column="micropassword" property="micropassword" />
+        <result column="isservicenumber" property="isservicenumber" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="isauthentication" property="authentication" />
+        <result column="isserverauth" property="serverauth" />
+        <result column="isAuthorization" property="authorization" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, appid, appscrity, url, barid, accesstoken, microsignal, micropassword, isservicenumber, username, password, isauthentication, isserverauth, isAuthorization
+    </sql>
+
+</mapper>

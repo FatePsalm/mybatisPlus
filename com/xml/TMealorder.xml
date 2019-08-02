@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TMealorderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.TMealorder">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="barid" property="barid" />
+        <result column="price" property="price" />
+        <result column="paystate" property="paystate" />
+        <result column="headcount" property="headcount" />
+        <result column="paytime" property="paytime" />
+        <result column="payid" property="payid" />
+        <result column="createtime" property="createtime" />
+        <result column="code" property="code" />
+        <result column="mealname" property="mealname" />
+        <result column="mealdetails" property="mealdetails" />
+        <result column="mealdescription" property="mealdescription" />
+        <result column="attach" property="attach" />
+        <result column="transaction_id" property="transactionId" />
+        <result column="isused" property="used" />
+        <result column="type" property="type" />
+        <result column="isrefund" property="refund" />
+        <result column="version" property="version" />
+        <result column="tmealid" property="tmealid" />
+        <result column="tel" property="tel" />
+        <result column="sitnum" property="sitnum" />
+        <result column="mealconver" property="mealconver" />
+        <result column="operatorid" property="operatorid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, barid, price, paystate, headcount, paytime, payid, createtime, code, mealname, mealdetails, mealdescription, attach, transaction_id, isused, type, isrefund, version, tmealid, tel, sitnum, mealconver, operatorid
+    </sql>
+
+</mapper>

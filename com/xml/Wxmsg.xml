@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.WxmsgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Wxmsg">
+        <id column="id" property="id" />
+        <result column="content" property="content" />
+        <result column="sign_type" property="signType" />
+        <result column="input_charset" property="inputCharset" />
+        <result column="SIGN" property="sign" />
+        <result column="trade_mode" property="tradeMode" />
+        <result column="trade_state" property="tradeState" />
+        <result column="partner" property="partner" />
+        <result column="bank_type" property="bankType" />
+        <result column="bank_billno" property="bankBillno" />
+        <result column="total_fee" property="totalFee" />
+        <result column="fee_type" property="feeType" />
+        <result column="notify_id" property="notifyId" />
+        <result column="transaction_id" property="transactionId" />
+        <result column="out_trade_no" property="outTradeNo" />
+        <result column="attach" property="attach" />
+        <result column="time_end" property="timeEnd" />
+        <result column="transport_fee" property="transportFee" />
+        <result column="product_fee" property="productFee" />
+        <result column="discount" property="discount" />
+        <result column="time" property="time" />
+        <result column="type" property="type" />
+        <result column="lamic_trade_no" property="lamicTradeNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, content, sign_type, input_charset, SIGN, trade_mode, trade_state, partner, bank_type, bank_billno, total_fee, fee_type, notify_id, transaction_id, out_trade_no, attach, time_end, transport_fee, product_fee, discount, time, type, lamic_trade_no
+    </sql>
+
+</mapper>

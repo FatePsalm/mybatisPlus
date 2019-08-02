@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.VoteitemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Voteitem">
+        <id column="tid" property="tid" />
+        <result column="cid" property="cid" />
+        <result column="barid" property="barid" />
+        <result column="userid" property="userid" />
+        <result column="title" property="title" />
+        <result column="picture" property="picture" />
+        <result column="description" property="description" />
+        <result column="time" property="time" />
+        <result column="votes" property="votes" />
+        <result column="speedvotes" property="speedvotes" />
+        <result column="number" property="number" />
+        <result column="ischeck" property="ischeck" />
+        <result column="videoSrc" property="videoSrc" />
+        <result column="thumbnail" property="thumbnail" />
+        <result column="contact" property="contact" />
+        <result column="pkurl" property="pkurl" />
+        <result column="isuse" property="isuse" />
+        <result column="groupmsg" property="groupmsg" />
+        <result column="captainid" property="captainid" />
+        <result column="captaindivid" property="captaindivid" />
+        <result column="pkuserdivid" property="pkuserdivid" />
+        <result column="backimage" property="backimage" />
+        <result column="name" property="name" />
+        <result column="wx_code" property="wxCode" />
+        <result column="verifyTxt" property="verifyTxt" />
+        <result column="updateInfo" property="updateInfo" />
+        <result column="updateCheck" property="updateCheck" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        tid, cid, barid, userid, title, picture, description, time, votes, speedvotes, number, ischeck, videoSrc, thumbnail, contact, pkurl, isuse, groupmsg, captainid, captaindivid, pkuserdivid, backimage, name, wx_code, verifyTxt, updateInfo, updateCheck
+    </sql>
+
+</mapper>

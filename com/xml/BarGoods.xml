@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.BarGoodsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.BarGoods">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="price" property="price" />
+        <result column="realprice" property="realprice" />
+        <result column="time" property="time" />
+        <result column="pic" property="pic" />
+        <result column="ordershow" property="ordershow" />
+        <result column="barid" property="barid" />
+        <result column="unit" property="unit" />
+        <result column="asDel" property="asDel" />
+        <result column="asUsed" property="asUsed" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, price, realprice, time, pic, ordershow, barid, unit, asDel, asUsed
+    </sql>
+
+</mapper>

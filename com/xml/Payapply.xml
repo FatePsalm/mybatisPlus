@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.PayapplyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Payapply">
+        <id column="id" property="id" />
+        <result column="adminid" property="adminid" />
+        <result column="name" property="name" />
+        <result column="tel" property="tel" />
+        <result column="applytime" property="applytime" />
+        <result column="isdispose" property="dispose" />
+        <result column="remark" property="remark" />
+        <result column="disposetime" property="disposetime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, adminid, name, tel, applytime, isdispose, remark, disposetime
+    </sql>
+
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.SubprimeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Subprime">
+        <id column="id" property="id" />
+        <result column="abarteamid" property="abarteamid" />
+        <result column="bbarteamid" property="bbarteamid" />
+        <result column="ascore" property="ascore" />
+        <result column="bscore" property="bscore" />
+        <result column="begintime" property="begintime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, abarteamid, bbarteamid, ascore, bscore, begintime
+    </sql>
+
+</mapper>

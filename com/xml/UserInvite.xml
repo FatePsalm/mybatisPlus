@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.UserInviteMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.UserInvite">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="superiorid" property="superiorid" />
+        <result column="inviteTime" property="inviteTime" />
+        <result column="isget" property="get" />
+        <result column="isPerform" property="perform" />
+        <result column="performTime" property="performTime" />
+        <result column="inviteGift" property="inviteGift" />
+        <result column="inviteNums" property="inviteNums" />
+        <result column="awardTime" property="awardTime" />
+        <result column="giveInviteGift" property="giveInviteGift" />
+        <result column="invitecount" property="invitecount" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, superiorid, inviteTime, isget, isPerform, performTime, inviteGift, inviteNums, awardTime, giveInviteGift, invitecount
+    </sql>
+
+</mapper>

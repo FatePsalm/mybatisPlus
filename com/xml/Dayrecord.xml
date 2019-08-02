@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.DayrecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Dayrecord">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="date" property="date" />
+        <result column="money" property="money" />
+        <result column="allMoney" property="allMoney" />
+        <result column="bpmoney" property="bpmoney" />
+        <result column="dsmoney" property="dsmoney" />
+        <result column="tpmoney" property="tpmoney" />
+        <result column="dbmoney" property="dbmoney" />
+        <result column="lovemoney" property="lovemoney" />
+        <result column="sxAllMoney" property="sxAllMoney" />
+        <result column="sxmoney" property="sxmoney" />
+        <result column="redmoney" property="redmoney" />
+        <result column="redAllDivid" property="redAllDivid" />
+        <result column="dbAllMoney" property="dbAllMoney" />
+        <result column="usableMoney" property="usableMoney" />
+        <result column="applyMoney" property="applyMoney" />
+        <result column="transferMoney" property="transferMoney" />
+        <result column="refundMoney" property="refundMoney" />
+        <result column="songmoney" property="songmoney" />
+        <result column="songAllMoney" property="songAllMoney" />
+        <result column="danceAllmoney" property="danceAllmoney" />
+        <result column="watchmoney" property="watchmoney" />
+        <result column="state" property="state" />
+        <result column="levelAllMoney" property="levelAllMoney" />
+        <result column="zgAllMoney" property="zgAllMoney" />
+        <result column="openBoxAllMoney" property="openBoxAllMoney" />
+        <result column="pkAllMoney" property="pkAllMoney" />
+        <result column="sendWineMoney" property="sendWineMoney" />
+        <result column="playLightMoney" property="playLightMoney" />
+        <result column="showCarAllMoney" property="showCarAllMoney" />
+        <result column="version" property="version" />
+        <result column="bootlickAllMoney" property="bootlickAllMoney" />
+        <result column="payBpThemeMoney" property="payBpThemeMoney" />
+        <result column="jumpBpMoney" property="jumpBpMoney" />
+        <result column="trumpetMoney" property="trumpetMoney" />
+        <result column="carRaceMoney" property="carRaceMoney" />
+        <result column="activityMoney" property="activityMoney" />
+        <result column="enjoyMoney" property="enjoyMoney" />
+        <result column="smashEggMoney" property="smashEggMoney" />
+        <result column="giftMoney" property="giftMoney" />
+        <result column="mountMoney" property="mountMoney" />
+        <result column="emoMoney" property="emoMoney" />
+        <result column="flagMoney" property="flagMoney" />
+        <result column="vipMoney" property="vipMoney" />
+        <result column="headDecorMoney" property="headDecorMoney" />
+        <result column="chickenGameMoney" property="chickenGameMoney" />
+        <result column="deductionCash" property="deductionCash" />
+        <result column="spellSongMoney" property="spellSongMoney" />
+        <result column="userFaceMoney" property="userFaceMoney" />
+        <result column="interactPlayMoney" property="interactPlayMoney" />
+        <result column="rechargeWemewCornMoney" property="rechargeWemewCornMoney" />
+        <result column="comeInAnimatMoney" property="comeInAnimatMoney" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, date, money, allMoney, bpmoney, dsmoney, tpmoney, dbmoney, lovemoney, sxAllMoney, sxmoney, redmoney, redAllDivid, dbAllMoney, usableMoney, applyMoney, transferMoney, refundMoney, songmoney, songAllMoney, danceAllmoney, watchmoney, state, levelAllMoney, zgAllMoney, openBoxAllMoney, pkAllMoney, sendWineMoney, playLightMoney, showCarAllMoney, version, bootlickAllMoney, payBpThemeMoney, jumpBpMoney, trumpetMoney, carRaceMoney, activityMoney, enjoyMoney, smashEggMoney, giftMoney, mountMoney, emoMoney, flagMoney, vipMoney, headDecorMoney, chickenGameMoney, deductionCash, spellSongMoney, userFaceMoney, interactPlayMoney, rechargeWemewCornMoney, comeInAnimatMoney
+    </sql>
+
+</mapper>

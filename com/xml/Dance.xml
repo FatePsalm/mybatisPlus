@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.DanceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Dance">
+        <id column="id" property="id" />
+        <result column="barId" property="barId" />
+        <result column="danceName" property="danceName" />
+        <result column="hot" property="hot" />
+        <result column="isDelete" property="delete" />
+        <result column="isSysDance" property="sysDance" />
+        <result column="createTime" property="createTime" />
+        <result column="createUserId" property="createUserId" />
+        <result column="remark" property="remark" />
+        <result column="isUsed" property="used" />
+        <result column="artistId" property="artistId" />
+        <result column="artistName" property="artistName" />
+        <result column="typeName" property="typeName" />
+        <result column="videoUrl" property="videoUrl" />
+        <result column="cutImgUrl" property="cutImgUrl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barId, danceName, hot, isDelete, isSysDance, createTime, createUserId, remark, isUsed, artistId, artistName, typeName, videoUrl, cutImgUrl
+    </sql>
+
+</mapper>

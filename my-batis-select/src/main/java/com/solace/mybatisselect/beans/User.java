@@ -1,8 +1,6 @@
 package com.solace.mybatisselect.beans;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.baomidou.mybatisplus.annotation.TableField;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -12,71 +10,169 @@ import java.time.LocalDateTime;
  * 
  * </p>
  *
- * @author CaoGang
- * @since 2018-09-13
+ * @author CG
+ * @since 2019-08-02
  */
-public class User extends Model<User> {
+public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 主键ID
-     */
-    @TableId(value = "test_id", type = IdType.AUTO)
-    private Long testId;
+    private String id;
 
-    /**
-     * 租户ID
-     */
-    private Long tenantId;
+    private String nickname;
 
-    /**
-     * 名称
-     */
+    private String city;
+
+    private String head;
+
+    private LocalDateTime createtime;
+
+    private String weixin;
+
+    private String tel;
+
+    private String openid;
+
+    private Boolean sex;
+
+    private Double longitude;
+
+    private Double latitude;
+
     private String name;
 
-    /**
-     * 年龄
-     */
+    private String sitenum;
+
+    private String remarks;
+
     private Integer age;
 
-    /**
-     * 测试下划线字段命名类型
-     */
-    private Integer testType;
+    private Integer height;
+
+    private Integer weight;
+
+    private String zy;
+
+    private String admireta;
+
+    @TableField("chatHead")
+    private String chatHead;
+
+    private Boolean todayislogin;
+
+    private String mycity;
+
+    private String sceneid;
+
+    private Boolean isupdatehead;
+
+    private Boolean isblack;
+
+    private String blackremarks;
 
     /**
-     * 日期
+     * 喵微新公众号的openid
      */
-    private LocalDateTime testDate;
+    @TableField("wemewOpenId")
+    private String wemewOpenId;
 
     /**
-     * 测试
+     * 是否更新了昵称
      */
-    private Long role;
+    @TableField("isUpdateNickName")
+    private Boolean isUpdateNickName;
 
     /**
-     * 手机号码
+     * 微信开放平台UnionID
      */
-    private String phone;
+    private String unionid;
 
+    /**
+     * 用户是否匿名
+     */
+    private Boolean isAnonymity;
 
-    public Long getTestId() {
-        return testId;
+    private String email;
+
+    private String username;
+
+    public String getId() {
+        return id;
     }
 
-    public void setTestId(Long testId) {
-        this.testId = testId;
+    public void setId(String id) {
+        this.id = id;
+    }
+    public String getNickname() {
+        return nickname;
     }
 
-    public Long getTenantId() {
-        return tenantId;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+    public String getCity() {
+        return city;
     }
 
-    public void setTenantId(Long tenantId) {
-        this.tenantId = tenantId;
+    public void setCity(String city) {
+        this.city = city;
+    }
+    public String getHead() {
+        return head;
     }
 
+    public void setHead(String head) {
+        this.head = head;
+    }
+    public LocalDateTime getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(LocalDateTime createtime) {
+        this.createtime = createtime;
+    }
+    public String getWeixin() {
+        return weixin;
+    }
+
+    public void setWeixin(String weixin) {
+        this.weixin = weixin;
+    }
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+    public String getOpenid() {
+        return openid;
+    }
+
+    public void setOpenid(String openid) {
+        this.openid = openid;
+    }
+    public Boolean getSex() {
+        return sex;
+    }
+
+    public void setSex(Boolean sex) {
+        this.sex = sex;
+    }
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
     public String getName() {
         return name;
     }
@@ -84,7 +180,20 @@ public class User extends Model<User> {
     public void setName(String name) {
         this.name = name;
     }
+    public String getSitenum() {
+        return sitenum;
+    }
 
+    public void setSitenum(String sitenum) {
+        this.sitenum = sitenum;
+    }
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
     public Integer getAge() {
         return age;
     }
@@ -92,55 +201,161 @@ public class User extends Model<User> {
     public void setAge(Integer age) {
         this.age = age;
     }
-
-    public Integer getTestType() {
-        return testType;
+    public Integer getHeight() {
+        return height;
     }
 
-    public void setTestType(Integer testType) {
-        this.testType = testType;
+    public void setHeight(Integer height) {
+        this.height = height;
+    }
+    public Integer getWeight() {
+        return weight;
     }
 
-    public LocalDateTime getTestDate() {
-        return testDate;
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
+    public String getZy() {
+        return zy;
     }
 
-    public void setTestDate(LocalDateTime testDate) {
-        this.testDate = testDate;
+    public void setZy(String zy) {
+        this.zy = zy;
+    }
+    public String getAdmireta() {
+        return admireta;
     }
 
-    public Long getRole() {
-        return role;
+    public void setAdmireta(String admireta) {
+        this.admireta = admireta;
+    }
+    public String getChatHead() {
+        return chatHead;
     }
 
-    public void setRole(Long role) {
-        this.role = role;
+    public void setChatHead(String chatHead) {
+        this.chatHead = chatHead;
+    }
+    public Boolean getTodayislogin() {
+        return todayislogin;
     }
 
-    public String getPhone() {
-        return phone;
+    public void setTodayislogin(Boolean todayislogin) {
+        this.todayislogin = todayislogin;
+    }
+    public String getMycity() {
+        return mycity;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setMycity(String mycity) {
+        this.mycity = mycity;
+    }
+    public String getSceneid() {
+        return sceneid;
     }
 
-    @Override
-    protected Serializable pkVal() {
-        return this.testId;
+    public void setSceneid(String sceneid) {
+        this.sceneid = sceneid;
+    }
+    public Boolean getIsupdatehead() {
+        return isupdatehead;
+    }
+
+    public void setIsupdatehead(Boolean isupdatehead) {
+        this.isupdatehead = isupdatehead;
+    }
+    public Boolean getIsblack() {
+        return isblack;
+    }
+
+    public void setIsblack(Boolean isblack) {
+        this.isblack = isblack;
+    }
+    public String getBlackremarks() {
+        return blackremarks;
+    }
+
+    public void setBlackremarks(String blackremarks) {
+        this.blackremarks = blackremarks;
+    }
+    public String getWemewOpenId() {
+        return wemewOpenId;
+    }
+
+    public void setWemewOpenId(String wemewOpenId) {
+        this.wemewOpenId = wemewOpenId;
+    }
+    public Boolean getUpdateNickName() {
+        return isUpdateNickName;
+    }
+
+    public void setUpdateNickName(Boolean isUpdateNickName) {
+        this.isUpdateNickName = isUpdateNickName;
+    }
+    public String getUnionid() {
+        return unionid;
+    }
+
+    public void setUnionid(String unionid) {
+        this.unionid = unionid;
+    }
+    public Boolean getAnonymity() {
+        return isAnonymity;
+    }
+
+    public void setAnonymity(Boolean isAnonymity) {
+        this.isAnonymity = isAnonymity;
+    }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     @Override
     public String toString() {
         return "User{" +
-        "testId=" + testId +
-        ", tenantId=" + tenantId +
+        "id=" + id +
+        ", nickname=" + nickname +
+        ", city=" + city +
+        ", head=" + head +
+        ", createtime=" + createtime +
+        ", weixin=" + weixin +
+        ", tel=" + tel +
+        ", openid=" + openid +
+        ", sex=" + sex +
+        ", longitude=" + longitude +
+        ", latitude=" + latitude +
         ", name=" + name +
+        ", sitenum=" + sitenum +
+        ", remarks=" + remarks +
         ", age=" + age +
-        ", testType=" + testType +
-        ", testDate=" + testDate +
-        ", role=" + role +
-        ", phone=" + phone +
+        ", height=" + height +
+        ", weight=" + weight +
+        ", zy=" + zy +
+        ", admireta=" + admireta +
+        ", chatHead=" + chatHead +
+        ", todayislogin=" + todayislogin +
+        ", mycity=" + mycity +
+        ", sceneid=" + sceneid +
+        ", isupdatehead=" + isupdatehead +
+        ", isblack=" + isblack +
+        ", blackremarks=" + blackremarks +
+        ", wemewOpenId=" + wemewOpenId +
+        ", isUpdateNickName=" + isUpdateNickName +
+        ", unionid=" + unionid +
+        ", isAnonymity=" + isAnonymity +
+        ", email=" + email +
+        ", username=" + username +
         "}";
     }
 }

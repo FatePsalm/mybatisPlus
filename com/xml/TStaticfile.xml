@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TStaticfileMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.TStaticfile">
+        <id column="id" property="id" />
+        <result column="objid" property="objid" />
+        <result column="domain" property="domain" />
+        <result column="basePath" property="basePath" />
+        <result column="name" property="name" />
+        <result column="ext" property="ext" />
+        <result column="TIME" property="time" />
+        <result column="type" property="type" />
+        <result column="remark" property="remark" />
+        <result column="resultcut" property="resultcut" />
+        <result column="width" property="width" />
+        <result column="height" property="height" />
+        <result column="filesize" property="filesize" />
+        <result column="allowdel" property="allowdel" />
+        <result column="sort" property="sort" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, objid, domain, basePath, name, ext, TIME, type, remark, resultcut, width, height, filesize, allowdel, sort
+    </sql>
+
+</mapper>

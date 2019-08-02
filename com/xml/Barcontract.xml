@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.BarcontractMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Barcontract">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="state" property="state" />
+        <result column="contract" property="contract" />
+        <result column="account_name" property="accountName" />
+        <result column="bank_name" property="bankName" />
+        <result column="bank_card" property="bankCard" />
+        <result column="bank_branches" property="bankBranches" />
+        <result column="account_name_old" property="accountNameOld" />
+        <result column="bank_name_old" property="bankNameOld" />
+        <result column="bank_card_old" property="bankCardOld" />
+        <result column="bank_branches_old" property="bankBranchesOld" />
+        <result column="create_time" property="createTime" />
+        <result column="operate_time" property="operateTime" />
+        <result column="remark" property="remark" />
+        <result column="operater" property="operater" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, state, contract, account_name, bank_name, bank_card, bank_branches, account_name_old, bank_name_old, bank_card_old, bank_branches_old, create_time, operate_time, remark, operater
+    </sql>
+
+</mapper>

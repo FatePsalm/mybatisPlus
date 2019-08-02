@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.CommodityMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Commodity">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="imgurl" property="imgurl" />
+        <result column="needpoints" property="needpoints" />
+        <result column="commnum" property="commnum" />
+        <result column="del" property="del" />
+        <result column="time" property="time" />
+        <result column="barid" property="barid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, title, imgurl, needpoints, commnum, del, time, barid
+    </sql>
+
+</mapper>

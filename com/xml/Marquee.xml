@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.MarqueeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Marquee">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="content" property="content" />
+        <result column="time" property="time" />
+        <result column="type" property="type" />
+        <result column="isuse" property="use" />
+        <result column="issys" property="sys" />
+        <result column="object" property="object" />
+        <result column="sort" property="sort" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, content, time, type, isuse, issys, object, sort
+    </sql>
+
+</mapper>

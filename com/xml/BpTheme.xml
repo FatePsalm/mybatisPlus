@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.BpThemeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.BpTheme">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="type" property="type" />
+        <result column="isuse" property="use" />
+        <result column="themeNum" property="themeNum" />
+        <result column="theLastTime" property="theLastTime" />
+        <result column="themeWords" property="themeWords" />
+        <result column="keyWords" property="keyWords" />
+        <result column="themeImage" property="themeImage" />
+        <result column="themeVideo" property="themeVideo" />
+        <result column="themeName" property="themeName" />
+        <result column="create_time" property="createTime" />
+        <result column="isVip" property="isVip" />
+        <result column="price" property="price" />
+        <result column="isEnable" property="isEnable" />
+        <result column="isTwoPersonBpTheme" property="isTwoPersonBpTheme" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, type, isuse, themeNum, theLastTime, themeWords, keyWords, themeImage, themeVideo, themeName, create_time, isVip, price, isEnable, isTwoPersonBpTheme
+    </sql>
+
+</mapper>

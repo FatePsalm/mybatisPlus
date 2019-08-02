@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.CashredMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Cashred">
+        <id column="id" property="id" />
+        <result column="userId" property="userId" />
+        <result column="barId" property="barId" />
+        <result column="totalRed" property="totalRed" />
+        <result column="remaAmount" property="remaAmount" />
+        <result column="totalNumber" property="totalNumber" />
+        <result column="remaNumber" property="remaNumber" />
+        <result column="createTime" property="createTime" />
+        <result column="msg" property="msg" />
+        <result column="payOrderId" property="payOrderId" />
+        <result column="type" property="type" />
+        <result column="sex" property="sex" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userId, barId, totalRed, remaAmount, totalNumber, remaNumber, createTime, msg, payOrderId, type, sex
+    </sql>
+
+</mapper>

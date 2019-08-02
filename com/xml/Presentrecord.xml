@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.PresentrecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Presentrecord">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="money" property="money" />
+        <result column="time" property="time" />
+        <result column="bankcard" property="bankcard" />
+        <result column="name" property="name" />
+        <result column="banktype" property="banktype" />
+        <result column="isagent" property="agent" />
+        <result column="remark" property="remark" />
+        <result column="type" property="type" />
+        <result column="fee" property="fee" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, money, time, bankcard, name, banktype, isagent, remark, type, fee
+    </sql>
+
+</mapper>

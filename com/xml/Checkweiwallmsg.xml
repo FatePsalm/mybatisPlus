@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.CheckweiwallmsgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Checkweiwallmsg">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="userid" property="userid" />
+        <result column="time" property="time" />
+        <result column="type" property="type" />
+        <result column="message" property="message" />
+        <result column="imgurl" property="imgurl" />
+        <result column="pasecond" property="pasecond" />
+        <result column="showNum" property="showNum" />
+        <result column="videoUrl" property="videoUrl" />
+        <result column="forusername" property="forusername" />
+        <result column="formsg" property="formsg" />
+        <result column="theme" property="theme" />
+        <result column="obj" property="obj" />
+        <result column="ischeck" property="check" />
+        <result column="needWhoPay" property="needWhoPay" />
+        <result column="seat_number" property="seatNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, userid, time, type, message, imgurl, pasecond, showNum, videoUrl, forusername, formsg, theme, obj, ischeck, needWhoPay, seat_number
+    </sql>
+
+</mapper>

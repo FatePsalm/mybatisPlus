@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.AdvertMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Advert">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="staticfileid" property="staticfileid" />
+        <result column="type" property="type" />
+        <result column="putintype" property="putintype" />
+        <result column="putinuser" property="putinuser" />
+        <result column="createtime" property="createtime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, title, staticfileid, type, putintype, putinuser, createtime
+    </sql>
+
+</mapper>

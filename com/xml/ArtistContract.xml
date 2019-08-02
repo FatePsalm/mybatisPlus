@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ArtistContractMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.ArtistContract">
+        <id column="id" property="id" />
+        <result column="artist_id" property="artistId" />
+        <result column="wechat_id" property="wechatId" />
+        <result column="birth" property="birth" />
+        <result column="tall" property="tall" />
+        <result column="weight" property="weight" />
+        <result column="bwh" property="bwh" />
+        <result column="city" property="city" />
+        <result column="artist_type" property="artistType" />
+        <result column="isdel" property="del" />
+        <result column="state" property="state" />
+        <result column="create_time" property="createTime" />
+        <result column="salary_min" property="salaryMin" />
+        <result column="salary_max" property="salaryMax" />
+        <result column="free_state" property="freeState" />
+        <result column="free_time" property="freeTime" />
+        <result column="contract_type" property="contractType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, artist_id, wechat_id, birth, tall, weight, bwh, city, artist_type, isdel, state, create_time, salary_min, salary_max, free_state, free_time, contract_type
+    </sql>
+
+</mapper>

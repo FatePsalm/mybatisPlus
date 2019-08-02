@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.OpenboxLotteryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.OpenboxLottery">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="userid" property="userid" />
+        <result column="time" property="time" />
+        <result column="updatetime" property="updatetime" />
+        <result column="state" property="state" />
+        <result column="isopen" property="isopen" />
+        <result column="open_num" property="openNum" />
+        <result column="no_open_num" property="noOpenNum" />
+        <result column="prize_name" property="prizeName" />
+        <result column="prize_img" property="prizeImg" />
+        <result column="redeem" property="redeem" />
+        <result column="game_round" property="gameRound" />
+        <result column="info_id" property="infoId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, userid, time, updatetime, state, isopen, open_num, no_open_num, prize_name, prize_img, redeem, game_round, info_id
+    </sql>
+
+</mapper>

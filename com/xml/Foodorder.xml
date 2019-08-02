@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.FoodorderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Foodorder">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="userid" property="userid" />
+        <result column="totalmoney" property="totalmoney" />
+        <result column="redmoney" property="redmoney" />
+        <result column="vipcardmoney" property="vipcardmoney" />
+        <result column="wxpaymoney" property="wxpaymoney" />
+        <result column="desknum" property="desknum" />
+        <result column="remark" property="remark" />
+        <result column="paystate" property="paystate" />
+        <result column="isCash" property="cash" />
+        <result column="time" property="time" />
+        <result column="payid" property="payid" />
+        <result column="pstype" property="pstype" />
+        <result column="tel" property="tel" />
+        <result column="address" property="address" />
+        <result column="explainmsg" property="explainmsg" />
+        <result column="isrefund" property="refund" />
+        <result column="operatorid" property="operatorid" />
+        <result column="fromfn" property="fromfn" />
+        <result column="userwaiterid" property="userwaiterid" />
+        <result column="iswemew" property="wemew" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, userid, totalmoney, redmoney, vipcardmoney, wxpaymoney, desknum, remark, paystate, isCash, time, payid, pstype, tel, address, explainmsg, isrefund, operatorid, fromfn, userwaiterid, iswemew
+    </sql>
+
+</mapper>

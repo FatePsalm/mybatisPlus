@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.WeionwallMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Weionwall">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="time" property="time" />
+        <result column="open" property="open" />
+        <result column="islottery" property="islottery" />
+        <result column="beginlottery" property="beginlottery" />
+        <result column="theme" property="theme" />
+        <result column="bgimgid" property="bgimgid" />
+        <result column="openflower" property="openflower" />
+        <result column="runtime" property="runtime" />
+        <result column="perpagesize" property="perpagesize" />
+        <result column="duang" property="duang" />
+        <result column="openCutneighbor" property="openCutneighbor" />
+        <result column="splitratio" property="splitratio" />
+        <result column="openscreen" property="openscreen" />
+        <result column="pairtype" property="pairtype" />
+        <result column="opends" property="opends" />
+        <result column="bpprice" property="bpprice" />
+        <result column="rewardratio" property="rewardratio" />
+        <result column="walltype" property="walltype" />
+        <result column="pricetype" property="pricetype" />
+        <result column="openpascreentime" property="openpascreentime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, time, open, islottery, beginlottery, theme, bgimgid, openflower, runtime, perpagesize, duang, openCutneighbor, splitratio, openscreen, pairtype, opends, bpprice, rewardratio, walltype, pricetype, openpascreentime
+    </sql>
+
+</mapper>

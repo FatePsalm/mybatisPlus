@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TBaraccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.TBaraccount">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="money" property="money" />
+        <result column="totalmoney" property="totalmoney" />
+        <result column="accountname" property="accountname" />
+        <result column="company" property="company" />
+        <result column="bankcard" property="bankcard" />
+        <result column="alipayaccount" property="alipayaccount" />
+        <result column="alipayname" property="alipayname" />
+        <result column="isagent" property="agent" />
+        <result column="tel" property="tel" />
+        <result column="remark" property="remark" />
+        <result column="averageMoney" property="averageMoney" />
+        <result column="weeklyRatio" property="weeklyRatio" />
+        <result column="allMoney" property="allMoney" />
+        <result column="bankbranches" property="bankbranches" />
+        <result column="isGroup" property="group" />
+        <result column="time" property="time" />
+        <result column="version" property="version" />
+        <result column="state" property="state" />
+        <result column="availableCurrency" property="availableCurrency" />
+        <result column="initAvailableCurrency" property="initAvailableCurrency" />
+        <result column="deductionCash" property="deductionCash" />
+        <result column="is_apply_transfer" property="applyTransfer" />
+        <result column="apply_money" property="applyMoney" />
+        <result column="transfer_type" property="transferType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, money, totalmoney, accountname, company, bankcard, alipayaccount, alipayname, isagent, tel, remark, averageMoney, weeklyRatio, allMoney, bankbranches, isGroup, time, version, state, availableCurrency, initAvailableCurrency, deductionCash, is_apply_transfer, apply_money, transfer_type
+    </sql>
+
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.VoteDrinksConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.VoteDrinksConfig">
+        <id column="id" property="id" />
+        <result column="bid" property="bid" />
+        <result column="cid" property="cid" />
+        <result column="dringk_img" property="dringkImg" />
+        <result column="dringk_note" property="dringkNote" />
+        <result column="dringk_number" property="dringkNumber" />
+        <result column="creation_time" property="creationTime" />
+        <result column="is_state" property="state" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, bid, cid, dringk_img, dringk_note, dringk_number, creation_time, is_state, start_time, end_time
+    </sql>
+
+</mapper>

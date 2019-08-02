@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TMealMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.TMeal">
+        <id column="t_id" property="tId" />
+        <result column="t_name" property="tName" />
+        <result column="details" property="details" />
+        <result column="price" property="price" />
+        <result column="description" property="description" />
+        <result column="barid" property="barid" />
+        <result column="createtime" property="createtime" />
+        <result column="headcount" property="headcount" />
+        <result column="salesvolume" property="salesvolume" />
+        <result column="cover" property="cover" />
+        <result column="isshelves" property="shelves" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        t_id, t_name, details, price, description, barid, createtime, headcount, salesvolume, cover, isshelves
+    </sql>
+
+</mapper>

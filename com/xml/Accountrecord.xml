@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.AccountrecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Accountrecord">
+        <id column="id" property="id" />
+        <result column="money" property="money" />
+        <result column="consumetype" property="consumetype" />
+        <result column="operator" property="operator" />
+        <result column="consumer" property="consumer" />
+        <result column="consumetime" property="consumetime" />
+        <result column="whereabouts" property="whereabouts" />
+        <result column="barid" property="barid" />
+        <result column="objid" property="objid" />
+        <result column="isagent" property="agent" />
+        <result column="consumebarid" property="consumebarid" />
+        <result column="isGroup" property="group" />
+        <result column="objectid" property="objectid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, money, consumetype, operator, consumer, consumetime, whereabouts, barid, objid, isagent, consumebarid, isGroup, objectid
+    </sql>
+
+</mapper>

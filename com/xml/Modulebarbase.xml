@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ModulebarbaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Modulebarbase">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="moduleid" property="moduleid" />
+        <result column="modulerename" property="modulerename" />
+        <result column="sort" property="sort" />
+        <result column="url" property="url" />
+        <result column="date" property="date" />
+        <result column="pv" property="pv" />
+        <result column="imgurl" property="imgurl" />
+        <result column="isMove" property="move" />
+        <result column="step" property="step" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, moduleid, modulerename, sort, url, date, pv, imgurl, isMove, step
+    </sql>
+
+</mapper>

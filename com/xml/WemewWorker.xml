@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.WemewWorkerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.WemewWorker">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="time" property="time" />
+        <result column="department" property="department" />
+        <result column="tel" property="tel" />
+        <result column="head" property="head" />
+        <result column="type" property="type" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, time, department, tel, head, type
+    </sql>
+
+</mapper>

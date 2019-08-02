@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.WxpayconfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Wxpayconfig">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="mch_id" property="mchId" />
+        <result column="partnerID" property="partnerID" />
+        <result column="partnerKey" property="partnerKey" />
+        <result column="time" property="time" />
+        <result column="remark" property="remark" />
+        <result column="staticfileid" property="staticfileid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, mch_id, partnerID, partnerKey, time, remark, staticfileid
+    </sql>
+
+</mapper>

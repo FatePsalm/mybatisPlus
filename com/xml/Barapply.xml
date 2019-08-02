@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.BarapplyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Barapply">
+        <id column="id" property="id" />
+        <result column="barname" property="barname" />
+        <result column="username" property="username" />
+        <result column="position" property="position" />
+        <result column="type" property="type" />
+        <result column="city" property="city" />
+        <result column="tel" property="tel" />
+        <result column="email" property="email" />
+        <result column="createtime" property="createtime" />
+        <result column="remark" property="remark" />
+        <result column="state" property="state" />
+        <result column="barid" property="barid" />
+        <result column="materiel" property="materiel" />
+        <result column="printname" property="printname" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barname, username, position, type, city, tel, email, createtime, remark, state, barid, materiel, printname
+    </sql>
+
+</mapper>

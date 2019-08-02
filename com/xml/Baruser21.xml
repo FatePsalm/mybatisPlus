@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.Baruser21Mapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Baruser21">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="userid" property="userid" />
+        <result column="time" property="time" />
+        <result column="isrich" property="rich" />
+        <result column="nearseated" property="nearseated" />
+        <result column="firstinnear" property="firstinnear" />
+        <result column="isblack" property="black" />
+        <result column="isScene" property="scene" />
+        <result column="isinnear" property="innear" />
+        <result column="sendTime" property="sendTime" />
+        <result column="outblacktime" property="outblacktime" />
+        <result column="remark" property="remark" />
+        <result column="createTime" property="createTime" />
+        <result column="foot_print" property="footPrint" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, userid, time, isrich, nearseated, firstinnear, isblack, isScene, isinnear, sendTime, outblacktime, remark, createTime, foot_print
+    </sql>
+
+</mapper>

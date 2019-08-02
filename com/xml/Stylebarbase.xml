@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.StylebarbaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Stylebarbase">
+        <id column="id" property="id" />
+        <result column="styleid" property="styleid" />
+        <result column="barid" property="barid" />
+        <result column="backgroundimgurl" property="backgroundimgurl" />
+        <result column="isselect" property="select" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, styleid, barid, backgroundimgurl, isselect
+    </sql>
+
+</mapper>

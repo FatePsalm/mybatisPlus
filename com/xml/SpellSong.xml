@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.SpellSongMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.SpellSong">
+        <id column="id" property="id" />
+        <result column="songId" property="songId" />
+        <result column="songRange" property="songRange" />
+        <result column="memberNumber" property="memberNumber" />
+        <result column="memberState" property="memberState" />
+        <result column="startTime" property="startTime" />
+        <result column="endTime" property="endTime" />
+        <result column="barId" property="barId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, songId, songRange, memberNumber, memberState, startTime, endTime, barId
+    </sql>
+
+</mapper>

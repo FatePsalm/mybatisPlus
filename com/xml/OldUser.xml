@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.OldUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.OldUser">
+        <id column="id" property="id" />
+        <result column="nickname" property="nickname" />
+        <result column="city" property="city" />
+        <result column="head" property="head" />
+        <result column="createtime" property="createtime" />
+        <result column="weixin" property="weixin" />
+        <result column="tel" property="tel" />
+        <result column="openid" property="openid" />
+        <result column="sex" property="sex" />
+        <result column="longitude" property="longitude" />
+        <result column="latitude" property="latitude" />
+        <result column="name" property="name" />
+        <result column="sitenum" property="sitenum" />
+        <result column="remarks" property="remarks" />
+        <result column="age" property="age" />
+        <result column="height" property="height" />
+        <result column="weight" property="weight" />
+        <result column="zy" property="zy" />
+        <result column="admireta" property="admireta" />
+        <result column="chatHead" property="chatHead" />
+        <result column="todayislogin" property="todayislogin" />
+        <result column="mycity" property="mycity" />
+        <result column="sceneid" property="sceneid" />
+        <result column="isupdatehead" property="updatehead" />
+        <result column="isblack" property="black" />
+        <result column="blackremarks" property="blackremarks" />
+        <result column="wemewOpenId" property="wemewOpenId" />
+        <result column="isUpdateNickName" property="updateNickName" />
+        <result column="unionid" property="unionid" />
+        <result column="is_anonymity" property="anonymity" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, nickname, city, head, createtime, weixin, tel, openid, sex, longitude, latitude, name, sitenum, remarks, age, height, weight, zy, admireta, chatHead, todayislogin, mycity, sceneid, isupdatehead, isblack, blackremarks, wemewOpenId, isUpdateNickName, unionid, is_anonymity
+    </sql>
+
+</mapper>

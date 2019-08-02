@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.PayorderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Payorder">
+        <id column="id" property="id" />
+        <result column="userId" property="userId" />
+        <result column="barId" property="barId" />
+        <result column="price" property="price" />
+        <result column="barmoney" property="barmoney" />
+        <result column="createTime" property="createTime" />
+        <result column="payId" property="payId" />
+        <result column="transactionId" property="transactionId" />
+        <result column="paystate" property="paystate" />
+        <result column="payTime" property="payTime" />
+        <result column="attach" property="attach" />
+        <result column="type" property="type" />
+        <result column="lamicId" property="lamicId" />
+        <result column="lamic_trade_no" property="lamicTradeNo" />
+        <result column="paytype" property="paytype" />
+        <result column="wxpaymoney" property="wxpaymoney" />
+        <result column="miaopaymoney" property="miaopaymoney" />
+        <result column="cashpaymoney" property="cashpaymoney" />
+        <result column="currencyMoney" property="currencyMoney" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userId, barId, price, barmoney, createTime, payId, transactionId, paystate, payTime, attach, type, lamicId, lamic_trade_no, paytype, wxpaymoney, miaopaymoney, cashpaymoney, currencyMoney
+    </sql>
+
+</mapper>

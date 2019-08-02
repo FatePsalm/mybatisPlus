@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.UserinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Userinfo">
+        <id column="userid" property="userid" />
+        <result column="real_name" property="realName" />
+        <result column="id_number" property="idNumber" />
+        <result column="education" property="education" />
+        <result column="phone" property="phone" />
+        <result column="type" property="type" />
+        <result column="create_time" property="createTime" />
+        <result column="nationality" property="nationality" />
+        <result column="deformity" property="deformity" />
+        <result column="identification_front" property="identificationFront" />
+        <result column="identification_back" property="identificationBack" />
+        <result column="state" property="state" />
+        <result column="is_agreement_operator" property="agreementOperator" />
+        <result column="time" property="time" />
+        <result column="reason" property="reason" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        userid, real_name, id_number, education, phone, type, create_time, nationality, deformity, identification_front, identification_back, state, is_agreement_operator, time, reason
+    </sql>
+
+</mapper>

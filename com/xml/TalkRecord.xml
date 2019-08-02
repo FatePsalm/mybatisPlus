@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TalkRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.TalkRecord">
+        <id column="id" property="id" />
+        <result column="senduserid" property="senduserid" />
+        <result column="acceptuserid" property="acceptuserid" />
+        <result column="message" property="message" />
+        <result column="type" property="type" />
+        <result column="time" property="time" />
+        <result column="isread" property="read" />
+        <result column="imgsrc" property="imgsrc" />
+        <result column="talkongroup" property="talkongroup" />
+        <result column="userdel" property="userdel" />
+        <result column="pic" property="pic" />
+        <result column="videosrc" property="videosrc" />
+        <result column="duration" property="duration" />
+        <result column="payState" property="payState" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, senduserid, acceptuserid, message, type, time, isread, imgsrc, talkongroup, userdel, pic, videosrc, duration, payState
+    </sql>
+
+</mapper>

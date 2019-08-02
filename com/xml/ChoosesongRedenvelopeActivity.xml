@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ChoosesongRedenvelopeActivityMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.ChoosesongRedenvelopeActivity">
+        <id column="id" property="id" />
+        <result column="issue" property="issue" />
+        <result column="totalNumber" property="totalNumber" />
+        <result column="currentNumber" property="currentNumber" />
+        <result column="rewardAmount" property="rewardAmount" />
+        <result column="openingTime" property="openingTime" />
+        <result column="endTime" property="endTime" />
+        <result column="creationTime" property="creationTime" />
+        <result column="stage" property="stage" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, issue, totalNumber, currentNumber, rewardAmount, openingTime, endTime, creationTime, stage
+    </sql>
+
+</mapper>

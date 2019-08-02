@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ClickgoodseatMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Clickgoodseat">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="viewuserid" property="viewuserid" />
+        <result column="clickgood" property="clickgood" />
+        <result column="clickgoodtime" property="clickgoodtime" />
+        <result column="seecontact" property="seecontact" />
+        <result column="seecontacttime" property="seecontacttime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, viewuserid, clickgood, clickgoodtime, seecontact, seecontacttime
+    </sql>
+
+</mapper>

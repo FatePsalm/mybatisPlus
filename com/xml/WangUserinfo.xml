@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.WangUserinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.WangUserinfo">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="head" property="head" />
+        <result column="admireta" property="admireta" />
+        <result column="nickname" property="nickname" />
+        <result column="userlabel" property="userlabel" />
+        <result column="last_barid" property="lastBarid" />
+        <result column="last_sitnum" property="lastSitnum" />
+        <result column="last_time" property="lastTime" />
+        <result column="state" property="state" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, head, admireta, nickname, userlabel, last_barid, last_sitnum, last_time, state
+    </sql>
+
+</mapper>

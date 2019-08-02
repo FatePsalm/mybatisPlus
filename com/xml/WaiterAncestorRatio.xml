@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.WaiterAncestorRatioMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.WaiterAncestorRatio">
+        <id column="id" property="id" />
+        <result column="waiter_id" property="waiterId" />
+        <result column="old_ratio" property="oldRatio" />
+        <result column="time" property="time" />
+        <result column="type" property="type" />
+        <result column="bar_id" property="barId" />
+        <result column="user_id" property="userId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, waiter_id, old_ratio, time, type, bar_id, user_id
+    </sql>
+
+</mapper>

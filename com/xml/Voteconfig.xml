@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.VoteconfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Voteconfig">
+        <id column="cid" property="cid" />
+        <result column="barid" property="barid" />
+        <result column="theme" property="theme" />
+        <result column="time" property="time" />
+        <result column="endtime" property="endtime" />
+        <result column="price" property="price" />
+        <result column="state" property="state" />
+        <result column="speedstate" property="speedstate" />
+        <result column="isuser" property="isuser" />
+        <result column="poster" property="poster" />
+        <result column="ewmurl" property="ewmurl" />
+        <result column="type" property="type" />
+        <result column="isopen" property="isopen" />
+        <result column="jg" property="jg" />
+        <result column="xs" property="xs" />
+        <result column="isshowindex" property="isshowindex" />
+        <result column="issearch" property="issearch" />
+        <result column="opencountdown" property="opencountdown" />
+        <result column="countdowntime" property="countdowntime" />
+        <result column="isuse" property="isuse" />
+        <result column="updatetime" property="updatetime" />
+        <result column="clearhbtime" property="clearhbtime" />
+        <result column="isopengoods" property="isopengoods" />
+        <result column="skinstyle" property="skinstyle" />
+        <result column="isopengroup" property="isopengroup" />
+        <result column="groupmsg" property="groupmsg" />
+        <result column="customvotes" property="customvotes" />
+        <result column="show_time" property="showTime" />
+        <result column="anonymous" property="anonymous" />
+        <result column="drinksstate" property="drinksstate" />
+        <result column="liveScreen" property="liveScreen" />
+        <result column="maxFreeVoteNum" property="maxFreeVoteNum" />
+        <result column="canVoteAfterFree" property="canVoteAfterFree" />
+        <result column="voteSwitch" property="voteSwitch" />
+        <result column="voteStartTime" property="voteStartTime" />
+        <result column="liveScreenSize" property="liveScreenSize" />
+        <result column="real_status" property="realStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        cid, barid, theme, time, endtime, price, state, speedstate, isuser, poster, ewmurl, type, isopen, jg, xs, isshowindex, issearch, opencountdown, countdowntime, isuse, updatetime, clearhbtime, isopengoods, skinstyle, isopengroup, groupmsg, customvotes, show_time, anonymous, drinksstate, liveScreen, maxFreeVoteNum, canVoteAfterFree, voteSwitch, voteStartTime, liveScreenSize, real_status
+    </sql>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ProgramMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Program">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="performer" property="performer" />
+        <result column="imgurl" property="imgurl" />
+        <result column="vote" property="vote" />
+        <result column="barid" property="barid" />
+        <result column="time" property="time" />
+        <result column="sort" property="sort" />
+        <result column="begintime" property="begintime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, performer, imgurl, vote, barid, time, sort, begintime
+    </sql>
+
+</mapper>

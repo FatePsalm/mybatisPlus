@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.UserWechatInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.UserWechatInfo">
+        <id column="userid" property="userid" />
+        <result column="mini_openid" property="miniOpenid" />
+        <result column="create_time" property="createTime" />
+        <result column="boss_openid" property="bossOpenid" />
+        <result column="phone_number" property="phoneNumber" />
+        <result column="pure_phone_number" property="purePhoneNumber" />
+        <result column="country_code" property="countryCode" />
+        <result column="star_openid" property="starOpenid" />
+        <result column="tianfu_openid" property="tianfuOpenid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        userid, mini_openid, create_time, boss_openid, phone_number, pure_phone_number, country_code, star_openid, tianfu_openid
+    </sql>
+
+</mapper>

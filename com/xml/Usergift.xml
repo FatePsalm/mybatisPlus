@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.UsergiftMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Usergift">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="touserid" property="touserid" />
+        <result column="giftid" property="giftid" />
+        <result column="barid" property="barid" />
+        <result column="time" property="time" />
+        <result column="paytime" property="paytime" />
+        <result column="paystate" property="paystate" />
+        <result column="price" property="price" />
+        <result column="paytype" property="paytype" />
+        <result column="payid" property="payid" />
+        <result column="transactionid" property="transactionid" />
+        <result column="attach" property="attach" />
+        <result column="msg" property="msg" />
+        <result column="mymoney" property="mymoney" />
+        <result column="redbag" property="redbag" />
+        <result column="cashbag" property="cashbag" />
+        <result column="num" property="num" />
+        <result column="talkid" property="talkid" />
+        <result column="libNum" property="libNum" />
+        <result column="source" property="source" />
+        <result column="lamic_trade_no" property="lamicTradeNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, touserid, giftid, barid, time, paytime, paystate, price, paytype, payid, transactionid, attach, msg, mymoney, redbag, cashbag, num, talkid, libNum, source, lamic_trade_no
+    </sql>
+
+</mapper>

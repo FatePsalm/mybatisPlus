@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.AgentnewMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Agentnew">
+        <id column="id" property="id" />
+        <result column="conpany" property="conpany" />
+        <result column="tel" property="tel" />
+        <result column="email" property="email" />
+        <result column="city" property="city" />
+        <result column="name" property="name" />
+        <result column="address" property="address" />
+        <result column="time" property="time" />
+        <result column="endtime" property="endtime" />
+        <result column="account" property="account" />
+        <result column="income" property="income" />
+        <result column="state" property="state" />
+        <result column="type" property="type" />
+        <result column="remarks" property="remarks" />
+        <result column="actingcity" property="actingcity" />
+        <result column="num" property="num" />
+        <result column="parentId" property="parentId" />
+        <result column="roleLevel" property="roleLevel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, conpany, tel, email, city, name, address, time, endtime, account, income, state, type, remarks, actingcity, num, parentId, roleLevel
+    </sql>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.EnjoymentRightsUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.EnjoymentRightsUser">
+        <id column="id" property="id" />
+        <result column="barId" property="barId" />
+        <result column="userId" property="userId" />
+        <result column="orderId" property="orderId" />
+        <result column="name" property="name" />
+        <result column="img" property="img" />
+        <result column="content" property="content" />
+        <result column="start" property="start" />
+        <result column="end" property="end" />
+        <result column="type" property="type" />
+        <result column="num" property="num" />
+        <result column="usedNum" property="usedNum" />
+        <result column="days" property="days" />
+        <result column="state" property="state" />
+        <result column="createTime" property="createTime" />
+        <result column="sendTime" property="sendTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barId, userId, orderId, name, img, content, start, end, type, num, usedNum, days, state, createTime, sendTime
+    </sql>
+
+</mapper>

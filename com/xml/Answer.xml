@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.AnswerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Answer">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="queid" property="queid" />
+        <result column="is_answer" property="answer" />
+        <result column="is_raffle" property="raffle" />
+        <result column="ans_time" property="ansTime" />
+        <result column="gift" property="gift" />
+        <result column="raffer_time" property="rafferTime" />
+        <result column="tel" property="tel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, queid, is_answer, is_raffle, ans_time, gift, raffer_time, tel
+    </sql>
+
+</mapper>

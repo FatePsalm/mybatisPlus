@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.UsercashMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Usercash">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="orderid" property="orderid" />
+        <result column="dmoney" property="dmoney" />
+        <result column="dtime" property="dtime" />
+        <result column="status" property="status" />
+        <result column="mchbillno" property="mchbillno" />
+        <result column="type" property="type" />
+        <result column="message" property="message" />
+        <result column="source_type" property="sourceType" />
+        <result column="fee" property="fee" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, orderid, dmoney, dtime, status, mchbillno, type, message, source_type, fee
+    </sql>
+
+</mapper>

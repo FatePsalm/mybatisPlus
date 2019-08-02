@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.BarbaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Barbase">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="tel" property="tel" />
+        <result column="description" property="description" />
+        <result column="time" property="time" />
+        <result column="longitude" property="longitude" />
+        <result column="latitude" property="latitude" />
+        <result column="logoid" property="logoid" />
+        <result column="consumption" property="consumption" />
+        <result column="address" property="address" />
+        <result column="wifipwd" property="wifipwd" />
+        <result column="label" property="label" />
+        <result column="toneid" property="toneid" />
+        <result column="vidiourl" property="vidiourl" />
+        <result column="pushimgid" property="pushimgid" />
+        <result column="pushmsg" property="pushmsg" />
+        <result column="pushtitle" property="pushtitle" />
+        <result column="step" property="step" />
+        <result column="twodimension" property="twodimension" />
+        <result column="iframehtml" property="iframehtml" />
+        <result column="pushlink" property="pushlink" />
+        <result column="styleewmurl" property="styleewmurl" />
+        <result column="city" property="city" />
+        <result column="bartype" property="bartype" />
+        <result column="isnormal" property="normal" />
+        <result column="firstabc" property="firstabc" />
+        <result column="settel" property="settel" />
+        <result column="remark" property="remark" />
+        <result column="artist_url" property="artistUrl" />
+        <result column="province" property="province" />
+        <result column="number" property="number" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, tel, description, time, longitude, latitude, logoid, consumption, address, wifipwd, label, toneid, vidiourl, pushimgid, pushmsg, pushtitle, step, twodimension, iframehtml, pushlink, styleewmurl, city, bartype, isnormal, firstabc, settel, remark, artist_url, province, number
+    </sql>
+
+</mapper>

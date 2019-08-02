@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.UserMountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.UserMount">
+        <id column="id" property="id" />
+        <result column="mountid" property="mountid" />
+        <result column="userid" property="userid" />
+        <result column="paystate" property="paystate" />
+        <result column="days" property="days" />
+        <result column="price" property="price" />
+        <result column="expire" property="expire" />
+        <result column="time" property="time" />
+        <result column="state" property="state" />
+        <result column="orderid" property="orderid" />
+        <result column="type" property="type" />
+        <result column="isuse" property="use" />
+        <result column="senderid" property="senderid" />
+        <result column="couponsid" property="couponsid" />
+        <result column="orderType" property="orderType" />
+        <result column="redbag" property="redbag" />
+        <result column="cashbag" property="cashbag" />
+        <result column="source" property="source" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, mountid, userid, paystate, days, price, expire, time, state, orderid, type, isuse, senderid, couponsid, orderType, redbag, cashbag, source
+    </sql>
+
+</mapper>

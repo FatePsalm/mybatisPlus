@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.HornmsgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Hornmsg">
+        <id column="id" property="id" />
+        <result column="userId" property="userId" />
+        <result column="barId" property="barId" />
+        <result column="objid" property="objid" />
+        <result column="type" property="type" />
+        <result column="msg_type" property="msgType" />
+        <result column="create_time" property="createTime" />
+        <result column="msg" property="msg" />
+        <result column="imgsrc" property="imgsrc" />
+        <result column="videoimgsrc" property="videoimgsrc" />
+        <result column="videosrc" property="videosrc" />
+        <result column="acceptnum" property="acceptnum" />
+        <result column="ischeck" property="ischeck" />
+        <result column="isdel" property="del" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userId, barId, objid, type, msg_type, create_time, msg, imgsrc, videoimgsrc, videosrc, acceptnum, ischeck, isdel
+    </sql>
+
+</mapper>

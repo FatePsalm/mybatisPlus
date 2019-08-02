@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.OldPascreenMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.OldPascreen">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="barid" property="barid" />
+        <result column="time" property="time" />
+        <result column="paytime" property="paytime" />
+        <result column="paystate" property="paystate" />
+        <result column="pasecond" property="pasecond" />
+        <result column="price" property="price" />
+        <result column="paytype" property="paytype" />
+        <result column="iswemew" property="wemew" />
+        <result column="payid" property="payid" />
+        <result column="transactionid" property="transactionid" />
+        <result column="attach" property="attach" />
+        <result column="msg" property="msg" />
+        <result column="picurl" property="picurl" />
+        <result column="sitnum" property="sitnum" />
+        <result column="type" property="type" />
+        <result column="staticfileid" property="staticfileid" />
+        <result column="obj" property="obj" />
+        <result column="examine" property="examine" />
+        <result column="operationtime" property="operationtime" />
+        <result column="source" property="source" />
+        <result column="mymoney" property="mymoney" />
+        <result column="shownum" property="shownum" />
+        <result column="maxLoop" property="maxLoop" />
+        <result column="dsmsg" property="dsmsg" />
+        <result column="videourl" property="videourl" />
+        <result column="redbag" property="redbag" />
+        <result column="theme" property="theme" />
+        <result column="cashbag" property="cashbag" />
+        <result column="seat_number" property="seatNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, barid, time, paytime, paystate, pasecond, price, paytype, iswemew, payid, transactionid, attach, msg, picurl, sitnum, type, staticfileid, obj, examine, operationtime, source, mymoney, shownum, maxLoop, dsmsg, videourl, redbag, theme, cashbag, seat_number
+    </sql>
+
+</mapper>

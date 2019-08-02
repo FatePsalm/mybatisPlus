@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.InteractPlayMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.InteractPlay">
+        <id column="id" property="id" />
+        <result column="creation_time" property="creationTime" />
+        <result column="interact_img" property="interactImg" />
+        <result column="interact_name" property="interactName" />
+        <result column="price" property="price" />
+        <result column="rules_text" property="rulesText" />
+        <result column="isopen" property="open" />
+        <result column="isdel" property="del" />
+        <result column="barid" property="barid" />
+        <result column="interact_type" property="interactType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, creation_time, interact_img, interact_name, price, rules_text, isopen, isdel, barid, interact_type
+    </sql>
+
+</mapper>

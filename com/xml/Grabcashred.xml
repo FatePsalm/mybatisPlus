@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.GrabcashredMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Grabcashred">
+        <id column="id" property="id" />
+        <result column="cashRedId" property="cashRedId" />
+        <result column="userId" property="userId" />
+        <result column="cashRed" property="cashRed" />
+        <result column="createTime" property="createTime" />
+        <result column="barid" property="barid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, cashRedId, userId, cashRed, createTime, barid
+    </sql>
+
+</mapper>

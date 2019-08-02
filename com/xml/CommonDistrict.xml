@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.CommonDistrictMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.CommonDistrict">
+        <id column="common_district_id" property="commonDistrictId" />
+        <result column="common_district_name" property="commonDistrictName" />
+        <result column="province_id" property="provinceId" />
+        <result column="province_state" property="provinceState" />
+        <result column="city_id" property="cityId" />
+        <result column="city_state" property="cityState" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        common_district_id, common_district_name, province_id, province_state, city_id, city_state
+    </sql>
+
+</mapper>

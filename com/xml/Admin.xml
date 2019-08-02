@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.AdminMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Admin">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="barid" property="barid" />
+        <result column="role" property="role" />
+        <result column="time" property="time" />
+        <result column="rancode" property="rancode" />
+        <result column="isuseful" property="useful" />
+        <result column="expires" property="expires" />
+        <result column="alipaymoney" property="alipaymoney" />
+        <result column="labourmoney" property="labourmoney" />
+        <result column="vipendtime" property="vipendtime" />
+        <result column="remark" property="remark" />
+        <result column="proveImgid" property="proveImgid" />
+        <result column="isstatic" property="static" />
+        <result column="isrempwd" property="rempwd" />
+        <result column="codeid" property="codeid" />
+        <result column="issendemail" property="sendemail" />
+        <result column="issendtoweemail" property="sendtoweemail" />
+        <result column="paypassword" property="paypassword" />
+        <result column="tel" property="tel" />
+        <result column="svipendtime" property="svipendtime" />
+        <result column="vipopentime" property="vipopentime" />
+        <result column="isupdatepwd" property="updatepwd" />
+        <result column="accountlevel" property="accountlevel" />
+        <result column="cashtype" property="cashtype" />
+        <result column="telhome" property="telhome" />
+        <result column="isagentauth" property="agentauth" />
+        <result column="isagentdeal" property="agentdeal" />
+        <result column="uid" property="uid" />
+        <result column="isAgreement" property="agreement" />
+        <result column="companyName" property="companyName" />
+        <result column="contacter" property="contacter" />
+        <result column="version" property="version" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, username, password, barid, role, time, rancode, isuseful, expires, alipaymoney, labourmoney, vipendtime, remark, proveImgid, isstatic, isrempwd, codeid, issendemail, issendtoweemail, paypassword, tel, svipendtime, vipopentime, isupdatepwd, accountlevel, cashtype, telhome, isagentauth, isagentdeal, uid, isAgreement, companyName, contacter, version
+    </sql>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TDatewineMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.TDatewine">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="tmealorderid" property="tmealorderid" />
+        <result column="description" property="description" />
+        <result column="payway" property="payway" />
+        <result column="createtime" property="createtime" />
+        <result column="signupnum" property="signupnum" />
+        <result column="barid" property="barid" />
+        <result column="datewineobj" property="datewineobj" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, tmealorderid, description, payway, createtime, signupnum, barid, datewineobj
+    </sql>
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.PwvoteMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Pwvote">
+        <id column="barid" property="barid" />
+        <result column="theme" property="theme" />
+        <result column="unitprice" property="unitprice" />
+        <result column="state" property="state" />
+        <result column="teama_id" property="teamaId" />
+        <result column="teamb_id" property="teambId" />
+        <result column="match_id" property="matchId" />
+        <result column="creattime" property="creattime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        barid, theme, unitprice, state, teama_id, teamb_id, match_id, creattime
+    </sql>
+
+</mapper>

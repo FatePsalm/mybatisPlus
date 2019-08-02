@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.PwvoterecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.Pwvoterecord">
+        <id column="matchid" property="matchid" />
+        <result column="barid" property="barid" />
+        <result column="winteamid" property="winteamid" />
+        <result column="raffertime" property="raffertime" />
+        <result column="usernums" property="usernums" />
+        <result column="luckusers" property="luckusers" />
+        <result column="theme" property="theme" />
+        <result column="creattime" property="creattime" />
+        <result column="endtime" property="endtime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        matchid, barid, winteamid, raffertime, usernums, luckusers, theme, creattime, endtime
+    </sql>
+
+</mapper>

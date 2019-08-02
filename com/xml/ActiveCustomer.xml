@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.ActiveCustomerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.test.entity.ActiveCustomer">
+        <id column="id" property="id" />
+        <result column="barid" property="barid" />
+        <result column="one_gift" property="oneGift" />
+        <result column="one_send" property="oneSend" />
+        <result column="one_use" property="oneUse" />
+        <result column="one_time" property="oneTime" />
+        <result column="one_over_time" property="oneOverTime" />
+        <result column="bp_gift" property="bpGift" />
+        <result column="bp_send" property="bpSend" />
+        <result column="bp_use" property="bpUse" />
+        <result column="bp_time" property="bpTime" />
+        <result column="bp_over_time" property="bpOverTime" />
+        <result column="type" property="type" />
+        <result column="real_name" property="realName" />
+        <result column="tel_phone" property="telPhone" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, barid, one_gift, one_send, one_use, one_time, one_over_time, bp_gift, bp_send, bp_use, bp_time, bp_over_time, type, real_name, tel_phone
+    </sql>
+
+</mapper>
